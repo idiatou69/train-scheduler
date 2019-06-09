@@ -1,0 +1,17 @@
+.jumbotron{
+    
+    color:palevioletred;
+    background:black;
+}
+
+
+
+body{
+background-image: url("../images/200w\ \(1\).webp")
+}
+.card-header{
+    background: palevioletred;
+}
+#submit{
+    background: palevioletred;
+}
