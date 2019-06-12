@@ -105,6 +105,7 @@ database.ref().on("child_added", function (snapshot) {
   // Next Train
   var nextTrain = moment().add(tMinutesTillTrain, "minutes");
   console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
+
   var td4 = $("<td>");
   if (diffTime < 0) {
     //after current time
@@ -133,5 +134,5 @@ database.ref().on("child_added", function (snapshot) {
   $("tbody").append(tr);
 })
 
-
-
+// we add time display
+$(".time").text(moment().format("hh:mm: a"))
